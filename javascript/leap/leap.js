@@ -3,7 +3,15 @@ var Year = function(year) {
 };
 
 Year.prototype.isLeap = function() {
-  return (this.year % 4 === 0);
+  if (this.year % 100 === 0) {
+    return false;
+  }
+  else if (this.year % 4 === 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
 };
 
 module.exports = Year;
