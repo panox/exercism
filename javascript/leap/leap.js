@@ -1,7 +1,9 @@
-var Year = function() {};
+var Year = function(year) {
+  this.year = year;
+};
 
-Year.prototype.isLeap = function(year) {
-  return (year % 4 === 0);
+Year.prototype.isLeap = function() {
+  return (this.year % 4 === 0);
 };
 
 module.exports = Year;
