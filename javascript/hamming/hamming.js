@@ -2,7 +2,17 @@ var Hamming = function() {};
 
 Hamming.prototype.compute = function(a, b) {
   var aSplit = a.split(''), bSplit = b.split('');
-  return aSplit.filter(function(i) {return bSplit.indexOf(i) < 0;}).length;
+  var equals = [];
+
+  aSplit.forEach( function (letter, index) {
+    if (letter == bSplit[index]) {
+      equals.push(true);
+    }
+    else  {
+      equals.push(false);
+    }
+  });
+  return equals.length;
 };
 
 module.exports = Hamming;
