@@ -12,7 +12,12 @@ Hamming.prototype.compute = function(a, b) {
       equals.push(false);
     }
   });
-  return equals.length;
+  var numOfFalse = 0;
+  for(var i=0;i<equals.length;i++){
+    if(equals[i] === "false")
+    numOfFalse++;
+  }
+  return numOfFalse;
 };
 
 module.exports = Hamming;
