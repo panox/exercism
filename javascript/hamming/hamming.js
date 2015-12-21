@@ -1,6 +1,9 @@
 var Hamming = function() {};
 
-Hamming.prototype.compute = function(a, b) {  
+Hamming.prototype.compute = function(a, b) {
+  if (a.length !== b.length) {
+    throw new Error('DNA strands must be of equal length.');
+  }
   if (a == b ) {
     return 0;
   }
