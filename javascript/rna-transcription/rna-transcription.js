@@ -1,19 +1,12 @@
 var DnaTranscriber = function() {};
 
 DnaTranscriber.prototype.toRna = function(nucleotide) {
-    if (nucleotide === 'C') {
-
-    }
-    switch (nucleotide) {
-        case 'C':
-            return 'G';
-        case 'G':
-            return 'C';
-        case 'A':
-            return 'U';
-        case 'T':
-            return 'A';
-    }
+    var Rna = nucleotide
+    .replace(/C/g, 'G')
+    .replace(/G/g, 'C')
+    .replace(/A/g, 'U')
+    .replace(/T/g, 'A');
+    return Rna;
 };
 
 module.exports = DnaTranscriber;
