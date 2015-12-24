@@ -23,4 +23,4 @@ Hamming.prototype.compute = function(a, b) {
   }
 };
 
-module.exports = Hamming
+module.exports = Hamming;
