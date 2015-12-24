@@ -1,9 +1,9 @@
 var DnaTranscriber = function() {};
 
 DnaTranscriber.prototype.toRna = function(nucleotide) {
-    //
-    // Your solution to the exercise goes here
-    //
+    if (nucleotide === 'C') {
+        return 'G';
+    }
 };
 
 module.exports = DnaTranscriber;
