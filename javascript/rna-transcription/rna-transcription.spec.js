@@ -11,11 +11,11 @@ describe('toRna()', function() {
     expect(dnaTranscriber.toRna('G')).toEqual('C');
   });
 
-  xit('transcribes adenine to uracil', function() {
+  it('transcribes adenine to uracil', function() {
     expect(dnaTranscriber.toRna('A')).toEqual('U');
   });
 
-  xit('transcribes thymine to adenine', function() {
+  it('transcribes thymine to adenine', function() {
     expect(dnaTranscriber.toRna('T')).toEqual('A');
   });
 
