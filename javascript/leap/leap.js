@@ -12,9 +12,7 @@ Year.prototype.isLeap = function() {
   else if (this.year % 4 === 0) {
     return true;
   }
-  else {
-    return false;
-  }
+  return false;
 };
 
 module.exports = Year;
