@@ -3,7 +3,9 @@ var Gigasecond = function(startDate) {
 };
 
 Gigasecond.prototype.date = function() {
-  return this.startDate;
+  var startDate = this.startDate;
+  startDate.setSeconds(startDate.getSeconds() + Math.pow(10,9));
+  return startDate;
 };
 
 module.exports = Gigasecond;
