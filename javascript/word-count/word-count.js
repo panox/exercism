@@ -1,7 +1,8 @@
 var Words = function() {};
 
 Words.prototype.count = function(phrase) {
-  return phrase;
+  var arrayOfWords = phrase.split(" ");
+  var objOfWords = {};
 };
 
 module.exports = Words;
