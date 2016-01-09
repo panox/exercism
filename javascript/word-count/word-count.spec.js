@@ -28,7 +28,7 @@ describe('count()', function() {
     expect(words.count('testing 1 2 testing')).toEqual(expectedCounts);
   });
 
-  xit('respects case', function() {
+  it('respects case', function() {
     var expectedCounts = { go: 1, Go:1, GO:1 };
     expect(words.count('go Go GO')).toEqual(expectedCounts);
   });
