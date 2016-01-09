@@ -10,6 +10,7 @@ var Words = function() {
 };
 
 Words.prototype.count = function(phrase) {
+  phrase = phrase.trim();
   var arrayOfWords = phrase.split(/\s+/);
   var objOfWords = {};
   for (var i = 0; i < arrayOfWords.length; i++) {
