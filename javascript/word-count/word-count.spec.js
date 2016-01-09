@@ -58,7 +58,7 @@ describe('count()', function() {
     expect(words.count('\t\tIntroductory Course      ')).toEqual(expectedCounts);
   });
 
-  xit('handles properties that exist on Object’s prototype', function() {
+  it('handles properties that exist on Object’s prototype', function() {
     var expectedCounts = { reserved: 1, words : 1, like :1,  prototype: 1, and : 1, toString: 1,  'ok?': 1};
     expect(words.count('reserved words like prototype and toString ok?')).toEqual(expectedCounts);
   });
