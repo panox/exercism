@@ -3,7 +3,7 @@ var Pangram = function(phrase) {
 };
 
 Pangram.prototype.isPangram = function() {
-  if (phrase === '') {
+  if (this.phrase === '') {
     return false;
   }
 };
