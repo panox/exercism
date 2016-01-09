@@ -23,7 +23,7 @@ describe('count()', function() {
     expect(words.count('car : carpet as java : javascript!!&@$%^&')).toEqual(expectedCounts);
   });
 
-  xit('includes numbers', function() {
+  it('includes numbers', function() {
     var expectedCounts = { testing: 2, 1: 1, 2: 1 };
     expect(words.count('testing 1 2 testing')).toEqual(expectedCounts);
   });
