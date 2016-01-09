@@ -3,7 +3,7 @@ var Pangram = function(phrase) {
 };
 
 Pangram.prototype.isPangram = function() {
-  return "ok";
+  return false;
 };
 
 module.exports = Pangram;
