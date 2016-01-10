@@ -15,7 +15,7 @@ BeerSong.prototype.verse = function(number) {
   return song;
 };
 
-BeerSong.prototype.song = function(startNumber, endNumber) {
+BeerSong.prototype.sing = function(startNumber, endNumber) {
   var song = "";
   if (startNumber === 1) {
     song += '1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n';
