@@ -20,7 +20,14 @@ BeerSong.prototype.sing = function(startNumber, endNumber) {
   var song = "";
   for (var i = startNumber; i >= endNumber; i--) {
     song += i.toString() + ' bottles of beer on the wall, '+ i.toString() +' bottles of beer.\n';
-    song += 'Take one down and pass it around, ' + (i-1).toString() + ' bottles of beer on the wall.\n';
+
+    if (i === 1) {
+      song += 'Take it down and pass it around, no more bottles of beer on the wall.\n\n';
+    }
+    else {
+      song += 'Take one down and pass it around, ' + (i-1).toString() + ' bottles of beer on the wall.\n';
+    }
+
     if (i !== endNumber) {
       song += '\n';
     }
