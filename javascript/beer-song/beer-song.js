@@ -16,6 +16,7 @@ BeerSong.prototype.verse = function(number) {
 };
 
 BeerSong.prototype.sing = function(startNumber, endNumber) {
+  endNumber = endNumber || 1;
   var song = "";
   for (var i = startNumber; i >= endNumber; i--) {
     song += i.toString() + ' bottles of beer on the wall, '+ i.toString() +' bottles of beer.\n';
