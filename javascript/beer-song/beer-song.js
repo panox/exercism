@@ -22,7 +22,7 @@ BeerSong.prototype.sing = function(startNumber, endNumber) {
     song += i.toString() + ' bottles of beer on the wall, '+ i.toString() +' bottles of beer.\n';
 
     if (i === 1) {
-      song += 'Take it down and pass it around, no more bottles of beer on the wall.\n\n';
+      song += 'Take it down and pass it around, no more bottles of beer on the wall.\n\nNo more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n';
     }
     else {
       song += 'Take one down and pass it around, ' + (i-1).toString() + ' bottles of beer on the wall.\n';
