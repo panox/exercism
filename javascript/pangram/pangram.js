@@ -3,6 +3,7 @@ var Pangram = function(phrase) {
 };
 
 Pangram.prototype.isPangram = function() {
+  this.phrase = this.phrase.toLowerCase();
   if (this.phrase === '') {
     return false;
   }
