@@ -12,12 +12,12 @@ describe('Pangram()', function()  {
     expect(pangram.isPangram()).toBe(true);
   });
 
-  xit("missing character 'x'", function()  {
+  it("missing character 'x'", function()  {
     var pangram = new Pangram("a quick movement of the enemy will jeopardize five gunboats");
     expect(pangram.isPangram()).toBe(false);
   });
 
-  xit('pangram with mixed case and punctuation', function()  {
+  it('pangram with mixed case and punctuation', function()  {
     var pangram = new Pangram("\"Five quacking Zephyrs jolt my wax bed.\"");
     expect(pangram.isPangram()).toBe(true);
   });
