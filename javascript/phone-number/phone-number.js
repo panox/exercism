@@ -1,9 +1,9 @@
-var PhoneNumber = function(number) {
-  this.number = number;
+var PhoneNumber = function(phone) {
+  this.phone = phone;
 };
 
 PhoneNumber.prototype.number = function() {
-  return this.number;
+  return this.phone;
 };
 
 module.exports = PhoneNumber;
