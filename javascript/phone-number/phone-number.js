@@ -3,7 +3,9 @@ var PhoneNumber = function(phone) {
 };
 
 PhoneNumber.prototype.number = function() {
-  return this.phone;
+  var re = /[^\d]/g;
+  var result = this.phone.replace(re, "");
+  return result;
 };
 
 module.exports = PhoneNumber;
