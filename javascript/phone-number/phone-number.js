@@ -20,4 +20,8 @@ PhoneNumber.prototype.areaCode = function() {
   return result;
 };
 
+PhoneNumber.prototype.toString = function() {
+  
+};
+
 module.exports = PhoneNumber;
