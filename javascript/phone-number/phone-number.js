@@ -9,7 +9,7 @@ PhoneNumber.prototype.number = function() {
     result = result.substring(1);
     return result;
   }
-  if (result.length === 11) {
+  if (result.length === 11 || result.length === 9) {
     return '0000000000';
   }
   return result;
