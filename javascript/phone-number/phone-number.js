@@ -16,7 +16,8 @@ PhoneNumber.prototype.number = function() {
 };
 
 PhoneNumber.prototype.areaCode = function() {
-  
+  var result = this.phone.substring(0,3);
+  return result;
 };
 
 module.exports = PhoneNumber;
