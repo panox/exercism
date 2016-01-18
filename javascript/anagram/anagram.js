@@ -13,9 +13,11 @@ Anagram.compare = function(one, two) {
 
 Anagram.prototype.matches = function(array) {
     var word = this.word;
-    // array.forEach(function(entry) {
-    //     return compare(word, entry);
-    // });
+    var result;
+    array.forEach(function(entry) {
+        result = Anagram.compare(word, entry);
+    });
+    return result;
 };
 
 module.exports = Anagram;
