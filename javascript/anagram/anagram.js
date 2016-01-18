@@ -10,14 +10,14 @@ Anagram.compare = function(one, two) {
 
 Anagram.prototype.matches = function(array) {
     var word = this.word;
-    array.forEach(function(entry) {
-        if (Anagram.compare(word, entry)) {
-            return entry;
-        }
-        else {
-            return [];
-        }
-    });
+
+    if (Anagram.compare(word, array[0])) {
+        return [array[0]];
+    }
+    else {
+        return [];
+    }
+
 };
 
 module.exports = Anagram;
