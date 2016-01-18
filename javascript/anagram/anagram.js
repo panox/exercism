@@ -4,7 +4,7 @@ var Anagram = function(word) {
 
 function compare(one, two) {
     if (one.lenght !== two.length) {
-        return false;
+        return [];
     }
 }
 
@@ -12,9 +12,7 @@ Anagram.prototype.matches = function(array) {
     var word = this.word;
     var result;
     for (var i = 0; i < array.length; i++) {
-        if (word.length !== array[i]) {
-            result = result || [];
-        }
+        result = compare(word, array[i]);
     }
     return result;
 };
