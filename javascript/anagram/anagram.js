@@ -6,6 +6,11 @@ function compare(one, two) {
     if (one.lenght !== two.length) {
         return [];
     }
+    one = one.split("").sort().join();
+    two = one.split("").sort().join();
+    if (one === two) {
+        return two;
+    }
 }
 
 Anagram.prototype.matches = function(array) {
