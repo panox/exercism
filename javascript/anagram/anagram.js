@@ -4,7 +4,7 @@ var Anagram = function(word) {
 
 function compare(one, two) {
     one = one.split("").sort().join();
-    two = one.split("").sort().join();
+    two = two.split("").sort().join();
     if (one.lenght !== two.length) {
         return [];
     }
