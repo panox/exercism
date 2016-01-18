@@ -2,6 +2,12 @@ var Anagram = function(word) {
     this.word = word;
 };
 
+function compare(one, two) {
+    if (one.lenght !== two.length) {
+        return false;
+    }
+}
+
 Anagram.prototype.matches = function(array) {
     var word = this.word;
     var result;
