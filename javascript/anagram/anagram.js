@@ -3,8 +3,13 @@ var Anagram = function(word) {
 };
 
 Anagram.compare = function(one, two) {
-    one = one.toLowerCase().split("").sort().join();
-    two = two.toLowerCase().split("").sort().join();
+    one = one.toLowerCase();
+    two = two.toLowerCase();
+    if (one === two) {
+        return false;
+    }
+    one = one.split("").sort().join();
+    two = two.split("").sort().join();
     return one === two;
 };
 
