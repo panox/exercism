@@ -17,7 +17,7 @@ Anagram.prototype.matches = function(collection) {
     var word = this.word;
     var array = [];
     var resultArray = [];
-    if (typeof collection === 'string') {
+    if (typeof collection !== 'object') {
         array.push(collection);
     }
     else {
