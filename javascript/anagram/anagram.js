@@ -18,7 +18,9 @@ Anagram.prototype.matches = function(collection) {
     var array = [];
     var resultArray = [];
     if (typeof collection !== 'object') {
-        array.push(collection);
+        for (var j = 0; j < arguments.length; j++) {
+            array.push(arguments[j]);
+        }
     }
     else {
         array = collection;
