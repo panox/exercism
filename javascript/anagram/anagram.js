@@ -13,12 +13,12 @@ Anagram.compare = function(one, two) {
     return one === two;
 };
 
-Anagram.prototype.matches = function(array) {
+Anagram.prototype.matches = function(collection) {
     var word = this.word;
     var resultArray = [];
-    for (var i = 0; i < array.length; i++) {
-        if (Anagram.compare(word, array[i])) {
-            resultArray.push(array[i]);
+    for (var i = 0; i < collection.length; i++) {
+        if (Anagram.compare(word, collection[i])) {
+            resultArray.push(collection[i]);
         }
     }
     return resultArray;
