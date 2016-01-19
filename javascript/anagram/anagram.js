@@ -3,8 +3,8 @@ var Anagram = function(word) {
 };
 
 Anagram.compare = function(one, two) {
-    one = one.split("").sort().join();
-    two = two.split("").sort().join();
+    one = one.toLowerCase().split("").sort().join();
+    two = two.toLowerCase().split("").sort().join();
     return one === two;
 };
 
@@ -17,7 +17,6 @@ Anagram.prototype.matches = function(array) {
         }
     }
     return resultArray;
-
 };
 
 module.exports = Anagram;
