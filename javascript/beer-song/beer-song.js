@@ -13,10 +13,10 @@ BeerSong.prototype.verse = function(number) {
 };
 
 BeerSong.prototype.sing = function(startNumber, endNumber) {
-  endNumber = endNumber || 1;
+  endNumber = endNumber || 0;
   var song = "";
   for (var i = startNumber; i >= endNumber; i--) {
-    song += this.verse(1);
+    song += this.verse(i);
   }
   return song;
 };
