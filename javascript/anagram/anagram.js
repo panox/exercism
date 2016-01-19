@@ -15,10 +15,17 @@ Anagram.compare = function(one, two) {
 
 Anagram.prototype.matches = function(collection) {
     var word = this.word;
+    var array = [];
     var resultArray = [];
-    for (var i = 0; i < collection.length; i++) {
-        if (Anagram.compare(word, collection[i])) {
-            resultArray.push(collection[i]);
+    if (typeof collection === 'string') {
+        array.push(collection);
+    }
+    else {
+        array = collection;
+    }
+    for (var i = 0; i < array.length; i++) {
+        if (Anagram.compare(word, array[i])) {
+            resultArray.push(array[i]);
         }
     }
     return resultArray;
