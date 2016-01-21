@@ -8,7 +8,7 @@ BeerSong.prototype.verse = function(number) {
     return 'No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n';
   }
   else {
-    return +number+' bottles of beer on the wall, '+number+' bottles of beer.\n' + 'Take one down and pass it around, '+(number-1)+' bottles of beer on the wall.\n\n' ;
+    return +number+' bottles of beer on the wall, '+number+' bottles of beer.\n' + 'Take one down and pass it around, '+(number-1)+' bottles of beer on the wall.\n' ;
   }
 };
 
@@ -17,6 +17,9 @@ BeerSong.prototype.sing = function(startNumber, endNumber) {
   var song = "";
   for (var i = startNumber; i >= endNumber; i--) {
     song += this.verse(i);
+    if ( i !== endNumber) {
+      song += '\n';
+    }
   }
   return song;
 };
