@@ -9,7 +9,9 @@ FoodChain.prototype.verse = function(number) {
       song += 'How absurd to swallow a bird!\n';
       song += 'She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\n'
       case 2:
-        song += 'It wriggled and jiggled and tickled inside her.\n';
+        if (number === 2) {
+          song += 'It wriggled and jiggled and tickled inside her.\n';
+        }
         song += 'She swallowed the spider to catch the fly.\n'
       case 1:
         song += 'I don\'t know why she swallowed the fly. ';
