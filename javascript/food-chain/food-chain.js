@@ -7,8 +7,8 @@ FoodChain.prototype.verse = function(number) {
     song += 'I know an old lady who swallowed a '+map[number]+'.\nI don\'t know why she swallowed the '+map[number]+'. Perhaps she\'ll die.\n';
   }
   else {
-    song += 'I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\n';
-    song += 'She swallowed the spider to catch the fly.\n' + 'I don\'t know why she swallowed the fly. Perhaps she\'ll die.\n';
+    song += 'I know an old lady who swallowed a '+map[number]+'.\nIt wriggled and jiggled and tickled inside her.\n';
+    song += 'She swallowed the '+map[number]+' to catch the '+map[number-1]+'.\n' + 'I don\'t know why she swallowed the '+map[number-1]+'. Perhaps she\'ll die.\n';
   }
   return song;
 
