@@ -3,8 +3,13 @@ var FoodChain = function() {};
 FoodChain.prototype.verse = function(number) {
   var song = "";
   var map = ['fly', 'spider'];
-  song += 'I know an old lady who swallowed a fly.\nI don\'t know why she swallowed the fly.';
-  song += ' Perhaps she\'ll die.\n';
+  if (number === 1) {
+    song += 'I know an old lady who swallowed a fly.\nI don\'t know why she swallowed the fly. Perhaps she\'ll die.\n';
+  }
+  else {
+    song += 'I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\n';
+    song += 'She swallowed the spider to catch the fly.\n' + 'I don\'t know why she swallowed the fly. Perhaps she\'ll die.\n';
+  }
   return song;
 
 };
