@@ -9,8 +9,12 @@ FoodChain.prototype.verse = function(number) {
         song += 'She\'s dead, of course!\n';
         break;
       case 7:
+        song += 'I don\'t know how she swallowed a cow!\n';
+        song += 'She swallowed the cow to catch the goat.\n';
       case 6:
-        song += 'Just opened her throat and swallowed a goat!\n';
+        if (number === 6) {
+          song += 'Just opened her throat and swallowed a goat!\n';
+        }
         song += 'She swallowed the goat to catch the dog.\n';
       case 5:
         if (number === 5) {
