@@ -42,8 +42,10 @@ FoodChain.prototype.verse = function(number) {
   if (number !== 8) {
     song += 'Perhaps she\'ll die.\n';
   }
-
   return song;
+};
+
+FoodChain.prototype.verses = function(start, end) {
 
 };
 
