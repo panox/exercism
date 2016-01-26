@@ -2,7 +2,7 @@ var FoodChain = function() {};
 
 FoodChain.prototype.verse = function(number) {
   var song = "";
-  var map = ['empty', 'fly', 'spider', 'bird', 'cat', 'dog'];
+  var map = ['empty', 'fly', 'spider', 'bird', 'cat', 'dog', 'goat', 'cow', 'horse'];
   song += 'I know an old lady who swallowed a '+map[number]+'.\n';
   switch(number) {
       case 5:
