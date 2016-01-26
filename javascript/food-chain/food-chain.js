@@ -5,6 +5,10 @@ FoodChain.prototype.verse = function(number) {
   var map = ['empty', 'fly', 'spider', 'bird', 'cat', 'dog', 'goat', 'cow', 'horse'];
   song += 'I know an old lady who swallowed a '+map[number]+'.\n';
   switch(number) {
+      case 8:
+        song += 'She\'s dead, of course!\n';
+        break;
+      case 7:
       case 6:
         song += 'Just opened her throat and swallowed a goat!\n';
         song += 'She swallowed the goat to catch the dog.\n';
@@ -31,7 +35,10 @@ FoodChain.prototype.verse = function(number) {
       case 1:
         song += 'I don\'t know why she swallowed the fly. ';
   }
-  song += 'Perhaps she\'ll die.\n';
+  if (number !== 8) {
+    song += 'Perhaps she\'ll die.\n';
+  }
+
   return song;
 
 };
