@@ -5,8 +5,13 @@ FoodChain.prototype.verse = function(number) {
   var map = ['empty', 'fly', 'spider', 'bird', 'cat', 'dog', 'goat', 'cow', 'horse'];
   song += 'I know an old lady who swallowed a '+map[number]+'.\n';
   switch(number) {
+      case 6:
+        song += 'Just opened her throat and swallowed a goat!\n';
+        song += 'She swallowed the goat to catch the dog.\n';
       case 5:
-        song += 'What a hog, to swallow a dog!\n';
+        if (number === 5) {
+          song += 'What a hog, to swallow a dog!\n';
+        }
         song += 'She swallowed the dog to catch the cat.\n';
       case 4:
         if (number === 4) {
