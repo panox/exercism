@@ -7,8 +7,9 @@ FoodChain.prototype.verse = function(number) {
   switch(number) {
       case 5:
         song += 'What a hog, to swallow a dog!\n';
+        song += 'She swallowed the dog to catch the cat.\n';
       case 4:
-        if (number === 3) {
+        if (number === 4) {
           song += 'Imagine that, to swallow a cat!\n';
         }
         song += 'She swallowed the cat to catch the bird.\n';
