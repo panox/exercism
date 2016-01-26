@@ -46,7 +46,12 @@ FoodChain.prototype.verse = function(number) {
 };
 
 FoodChain.prototype.verses = function(start, end) {
-
+  var song = '';
+  for (var i = start; i <= end; i++) {
+    song+= FoodChain.prototype.verse(i);
+    song+= '\n\n';
+  }
+  return song;
 };
 
 module.exports = FoodChain;
