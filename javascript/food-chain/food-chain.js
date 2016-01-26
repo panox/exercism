@@ -49,9 +49,7 @@ FoodChain.prototype.verses = function(start, end) {
   var song = '';
   for (var i = start; i <= end; i++) {
     song+= FoodChain.prototype.verse(i);
-    if (i !== end) {
-      song+= '\n\n';
-    }
+      song+= '\n';
   }
   return song;
 };
