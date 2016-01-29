@@ -6,7 +6,14 @@ School.prototype.roster = function() {
   return this.schoolBody;
 };
 School.prototype.add = function(name, grade) {
-  this.schoolBody[grade] = [name];
+  var schoolBody = this.schoolBody;
+  if (schoolBody[grade]) {
+    schoolBody[grade].push(name);
+  }
+  else {
+    schoolBody[grade] = [name];
+  }
+
 };
 
 module.exports = School;
