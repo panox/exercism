@@ -13,7 +13,9 @@ School.prototype.add = function(name, grade) {
   else {
     schoolBody[grade] = [name];
   }
-
+};
+School.prototype.grade = function() {
+  return this.schoolBody;
 };
 
 module.exports = School;
