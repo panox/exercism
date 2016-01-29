@@ -17,7 +17,8 @@ School.prototype.add = function(name, grade) {
 School.prototype.grade = function(grade) {
   var schoolBody = this.schoolBody;
   if (schoolBody[grade]) {
-    return schoolBody[grade].sort();
+    schoolBody[grade].sort();
+    return schoolBody[grade];
   }
   else {
     return schoolBody[grade] = [];
