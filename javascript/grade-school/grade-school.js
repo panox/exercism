@@ -14,8 +14,8 @@ School.prototype.add = function(name, grade) {
     schoolBody[grade] = [name];
   }
 };
-School.prototype.grade = function() {
-  return this.schoolBody;
+School.prototype.grade = function(grade) {
+  return this.schoolBody[grade].sort();
 };
 
 module.exports = School;
