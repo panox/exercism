@@ -1,10 +1,12 @@
-var School = function() {};
+var School = function() {
+  this.schoolBody = {};
+};
 
 School.prototype.roster = function() {
-  return {};
+  return this.schoolBody;
 };
 School.prototype.add = function(name, grade) {
-  
+
 };
 
 module.exports = School;
