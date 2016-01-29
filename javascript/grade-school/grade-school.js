@@ -3,6 +3,7 @@ var School = function() {
 };
 
 School.prototype.roster = function() {
+  // loop through grades and call this.grade(i);
   return this.schoolBody;
 };
 School.prototype.add = function(name, grade) {
