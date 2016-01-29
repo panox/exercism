@@ -15,7 +15,13 @@ School.prototype.add = function(name, grade) {
   }
 };
 School.prototype.grade = function(grade) {
-  return this.schoolBody[grade].sort();
+  var schoolBody = this.schoolBody;
+  if (schoolBody[grade]) {
+    return schoolBody[grade].sort();
+  }
+  else {
+    return schoolBody[grade] = [];
+  }
 };
 
 module.exports = School;
