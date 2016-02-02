@@ -13,4 +13,8 @@ function generatName() {
   return char1+char2+number1+number2+number3;
 }
 
+Robot.prototype.reset = function () {
+  this.name = generatName();
+};
+
 module.exports = Robot;
