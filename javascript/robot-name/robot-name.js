@@ -1,6 +1,8 @@
-var Robot = function() {};
+var Robot = function() {
+  this.name = 'RX837';
+};
 
-Robot.prototype.empty = function() {
+Robot.prototype.reboot = function() {
 };
 
 module.exports = Robot;
