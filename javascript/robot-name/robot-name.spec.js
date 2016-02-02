@@ -21,7 +21,7 @@ describe('Robot', function() {
     expect(robot.name).toEqual(robot.name);
   });
 
-  xit('different robots have different names', function() {
+  it('different robots have different names', function() {
     var differentRobot = new Robot();
     expect(differentRobot.name).not.toEqual(robot.name);
   });
