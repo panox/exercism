@@ -10,15 +10,17 @@ function randomTwentySix() {
 }
 
 function generatName() {
-  var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
-  var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  var char1 = alphabet[randomTwentySix()];
-  var char2 = alphabet[randomTwentySix()];
-  var number1 = numbers[randomNine()];
-  var number2 = numbers[randomNine()];
-  var number3 = numbers[randomNine()];
-  var newName = char1+char2+number1+number2+number3;
-  return newName;
+  var text = "";
+  var aplphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numbers = "0123456789";
+
+  for( var i=0; i < 2; i++ ) {
+      text += aplphabet.charAt(Math.floor(Math.random() * aplphabet.length));
+  }
+  for( var j=0; j < 3; j++ ) {
+    text += numbers.charAt(Math.floor(Math.random() * numbers.length));
+  }
+  return text;
 }
 
 Robot.prototype.reset = function () {
