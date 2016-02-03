@@ -5,13 +5,6 @@ var Robot = function() {
   };
 };
 
-function randomNine() {
-  return Math.floor(Math.random() * 9);
-}
-function randomTwentySix() {
-  return Math.floor(Math.random() * 26);
-}
-
 function generatName() {
   var name = "";
   var aplphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
