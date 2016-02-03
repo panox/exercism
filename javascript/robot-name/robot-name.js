@@ -1,5 +1,8 @@
 var Robot = function() {
   this.name = generatName();
+  this.reset = function () {
+    this.name = generatName();
+  };
 };
 
 function randomNine() {
@@ -10,21 +13,17 @@ function randomTwentySix() {
 }
 
 function generatName() {
-  var text = "";
+  var name = "";
   var aplphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numbers = "0123456789";
 
   for( var i=0; i < 2; i++ ) {
-      text += aplphabet.charAt(Math.floor(Math.random() * aplphabet.length));
+      name += aplphabet.charAt(Math.floor(Math.random() * aplphabet.length));
   }
   for( var j=0; j < 3; j++ ) {
-    text += numbers.charAt(Math.floor(Math.random() * numbers.length));
+    name += numbers.charAt(Math.floor(Math.random() * numbers.length));
   }
-  return text;
+  return name;
 }
-
-Robot.prototype.reset = function () {
-  this.name = generatName();
-};
 
 module.exports = Robot;
