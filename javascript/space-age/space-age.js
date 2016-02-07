@@ -14,31 +14,14 @@ var SpaceAge = function(seconds) {
   this.calculate = function (seconds, planet) {
     return parseFloat((seconds/this.yearSec[planet]).toFixed(2));
   };
-};
-
-SpaceAge.prototype.onEarth = function() {
-  return this.calculate(this.seconds, 'Earth');
-};
-SpaceAge.prototype.onMercury = function() {
-  return this.calculate(this.seconds, 'Mercury');
-};
-SpaceAge.prototype.onVenus = function() {
-  return this.calculate(this.seconds, 'Venus');
-};
-SpaceAge.prototype.onMars = function() {
-  return this.calculate(this.seconds, 'Mars');
-};
-SpaceAge.prototype.onJupiter = function() {
-  return this.calculate(this.seconds, 'Jupiter');
-};
-SpaceAge.prototype.onSaturn = function() {
-  return this.calculate(this.seconds, 'Saturn');
-};
-SpaceAge.prototype.onUranus = function() {
-  return this.calculate(this.seconds, 'Uranus');
-};
-SpaceAge.prototype.onNeptune = function() {
-  return this.calculate(this.seconds, 'Neptune');
+  this.onEarth = function() { return this.calculate(this.seconds, 'Earth'); };
+  this.onMercury = function() { return this.calculate(this.seconds, 'Mercury'); };
+  this.onVenus = function() { return this.calculate(this.seconds, 'Venus'); };
+  this.onMars = function() { return this.calculate(this.seconds, 'Mars'); };
+  this.onJupiter = function() { return this.calculate(this.seconds, 'Jupiter'); };
+  this.onSaturn = function() { return this.calculate(this.seconds, 'Saturn'); };
+  this.onUranus = function() { return this.calculate(this.seconds, 'Uranus'); };
+  this.onNeptune = function() { return this.calculate(this.seconds, 'Neptune'); };
 };
 
 module.exports = SpaceAge;
