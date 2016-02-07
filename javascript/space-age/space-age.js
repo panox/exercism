@@ -11,11 +11,13 @@ var SpaceAge = function(seconds) {
     'Uranus'  : this.earthYearSec * 84.016846,
     'Neptune' : this.earthYearSec * 164.79132
   };
+  this.calculate = function (seconds, planet) {
+    return parseFloat((seconds/this.yearSec[planet]).toFixed(2));
+  };
 };
 
 SpaceAge.prototype.onEarth = function() {
-  var seconds = this.seconds;
-  return parseFloat((seconds/31557600).toFixed(2));
+  return this.calculate(this.seconds, 'Earth');
 };
 SpaceAge.prototype.onMercury = function() {
   var seconds = this.seconds;
