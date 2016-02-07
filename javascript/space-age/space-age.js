@@ -4,7 +4,7 @@ var SpaceAge = function(seconds) {
 
 SpaceAge.prototype.onEarth = function() {
   var seconds = this.seconds;
-  return seconds/31557600;
+  return parseFloat((seconds/31557600).toFixed(2));
 };
 
 module.exports = SpaceAge;
